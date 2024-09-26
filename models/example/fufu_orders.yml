@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+  - name: fufu_republic
+    description: This is the raw dataset used for this assignment
+    database: dataverse-dami
+    schema: fufu_republic
+    tables:
+      - name: orders
+        description: One record per order from customer
+        columns:
+          - name: order_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+          - name: menu_id
+            description: Shows different menu ordered and is foreign key to menus table
+            tests:
+              - not_null
+          - name: payment_id
+            description: Shows different payment options used for purchase and is foreign key to payment table
+            tests:
+              - not_null
+          - name: dining_id
+            description: Shows different dining options and is foreign key to dining table
+            tests:
+              - not_null
+          - name: customer_id
+            description: Shows customers and is foreign key to customer table
+            tests:
+              - not_null
+          - name: location_id
+            description: Shows different locations where orders where purchased and is foreign key to location table
+            tests:
+              - not_null
+          - name: order_date
+            description: Shows the date when order was purchased
+            tests:
+              - not_null
+          - name: quantity
+            description: Shows the quantity of iem purchased
+            tests:
+              - not_null

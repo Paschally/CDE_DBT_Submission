@@ -1,0 +1,7 @@
+p_id, p_type, p_category
+1, cash, cash
+2, verve, card
+3, mastercard, card
+4, swift, online
+5, nomba, online
+6, paystack, online

@@ -1,0 +1,7 @@
+i_id, i_name, i_quantity, i_price, i_menu_id
+1, rice, 500, 65, 4001
+2, tomato, 500, 20, 4001
+3, cabbage, 450, 33, 4002
+4, mayonnaise, 450, 42, 4002
+5, flour, 600, 35, 4003
+6, egg, 600, 50, 4003
